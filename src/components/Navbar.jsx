@@ -45,21 +45,13 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="hover:text-hoverColor transition-all cursor-pointer"
-            >
-              About Us
-            </Link>
-            <Link
               to="services"
               spy={true}
               smooth={true}
               duration={500}
               className="hover:text-hoverColor transition-all cursor-pointer"
             >
+
               Services
             </Link>
             <Link
