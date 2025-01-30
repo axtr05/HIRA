@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import Login from '../components/Login';
 
 const Navbar = () => { 
   const [menu, setMenu] = useState(false);
@@ -9,6 +8,9 @@ const Navbar = () => {
 
   const handleChange = () => {
     setMenu(!menu);
+  if (!menu) {
+    setShowForm(false); 
+  }
   };
 
   const closeMenu = () => {
